@@ -1,0 +1,8 @@
+<div class="Cust">Customer List</div>
+<ul>
+    <li *ngFor="let user of userListData" (click)="onItemClick(user)">
+        {{ user.name }}
+    </li>
+</ul>
+
+<div *ngIf="userListData.length == 0">User List Empty</div>

@@ -1,0 +1,48 @@
+.header{
+    background-color: rgba(238, 206, 62, 0.781);
+    color: darkblue;
+    font-style:unset;
+    height: 50px;
+}
+
+
+.formWrapper{
+    background-color: grey;
+    border:2px solid gray;
+    padding: 0 20px 20px 20px;
+    width: 60%;
+    
+    margin:60px;
+
+}
+.list{
+    color: blue;
+    
+}
+.Cust{
+    background-color:darkgreen ;
+    margin-top: 10px;
+    color:red;
+}
+.heading{
+    color:indigo;
+}
+.formWrapper label {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    width: 200px;
+}
+.sub-button{
+    margin-right: 120px;
+    padding: 5px;
+    width: 60px;
+    background-color:navy;
+    color: white;
+}
+.cancel{
+    margin-left: 80px;
+    padding: 5px;
+    width: 60px;
+    background-color: chocolate;
+}
