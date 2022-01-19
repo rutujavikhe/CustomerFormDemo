@@ -31,9 +31,7 @@ export class UserFormComponent implements OnInit {
   }
 
   cancel() {
-    // this.myForm.reset();
-    this.myForm.markAsPristine();
-    this.myForm.markAsUntouched();
+    this.myForm.reset();
   }
 
   get m() {
@@ -43,9 +41,7 @@ export class UserFormComponent implements OnInit {
   onSubmit() {
     console.log(this.myForm.value);
     this.userService.addNewUser(this.myForm.value);
-    this.myForm.controls?.['name'].reset();
-    this.myForm.controls?.['dob'].reset();
-    this.myForm.controls?.['address'].reset();
+    this.myForm.reset();
   }
 
   getToday(): string {
