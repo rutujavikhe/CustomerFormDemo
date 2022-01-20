@@ -39,9 +39,13 @@ export class UserFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.myForm.value);
-    this.userService.addNewUser(this.myForm.value);
-    this.myForm.reset();
+    if(this.myForm.controls['name'].value != '' && this.myForm.controls['dob'].value != '') {
+      console.log(this.myForm.value);
+      this.userService.addNewUser(this.myForm.value);
+      this.myForm.reset();
+    } else {
+      alert('Please enter values');
+    }
   }
 
   getToday(): string {
